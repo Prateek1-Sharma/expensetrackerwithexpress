@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="sform" onsubmit="handleFormSubmit(event)">
+    <label>
+        Choose expense Amount:<input type="number" id="exp_amt" name="amount">
+    </label>
+    <label>
+        Choose description:<input type="text" id="exp_des" name="description">
+    </label>
+    <label>
+        Choose Category:<select id="exp_cat" name="category">
+            <option value="movies">Movies</option>
+            <option value="fuel">Fuel</option>
+            <option value="snacks">Snacks</option>
+        </select>
+    </label>
+    
+    <label>
+       <button type="submit">Add Expense</button>
+    </label>
+</form>
+<ul id="ulList">
+</ul>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+<script src="expense.js"></script>
+</html>
